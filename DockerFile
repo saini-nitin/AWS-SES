@@ -1,0 +1,4 @@
+FROM node
+ADD target/constants.jar constants.jar
+EXPOSE 8300
+ENTRYPOINT ["java","-jar","constants.jar"]
